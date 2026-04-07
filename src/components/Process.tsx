@@ -21,14 +21,8 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="py-24 bg-bg-primary overflow-hidden">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Як це працює</h2>
-          <div className="w-20 h-1 bg-accent mx-auto rounded-full" />
-        </div>
-
-        <div className="relative max-w-6xl mx-auto">
+    <section className="p-8 md:p-12 overflow-hidden">
+      <div className="relative max-w-6xl mx-auto">
           {/* Connecting Line (Desktop) */}
           <div className="hidden lg:block absolute top-1/2 left-0 w-full h-px bg-white/10 -translate-y-1/2" />
           
@@ -54,7 +48,6 @@ export default function Process() {
               </motion.div>
             ))}
           </div>
-        </div>
       </div>
     </section>
   );

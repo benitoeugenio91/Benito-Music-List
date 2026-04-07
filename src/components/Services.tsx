@@ -27,15 +27,9 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-bg-secondary">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Що ти отримаєш</h2>
-          <div className="w-20 h-1 bg-accent mx-auto rounded-full" />
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {services.map((service, index) => (
+    <section id="services" className="p-8 md:p-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        {services.map((service, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -53,7 +47,6 @@ export default function Services() {
               </p>
             </motion.div>
           ))}
-        </div>
       </div>
     </section>
   );
